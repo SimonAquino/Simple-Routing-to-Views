@@ -11,3 +11,4 @@ Route::get('/', function () {
 });
 
 Route::get('/greet', [App\Http\Controllers\GreetController::class, 'show']);
+Route::get('/greet', [GreetController::class, 'index']);
